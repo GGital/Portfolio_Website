@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter/3.19.3/inter.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact_section.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='transition.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about_me.css') }}">
+</head>
+<body>
+      <!-- Enhanced Navigation Bar using Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand animate-element" href="#">
+        <i class="fas fa-laptop-code animate-element"></i> GGital
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link animate-element" aria-current="page" href="{{ url_for('index') }}">
+              <i class="fas fa-home animate-element"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-element" href="{{ url_for('portfolio') }}">
+              <i class="fas fa-briefcase animate-element"></i> Portfolio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-element" href="{{ url_for('popgital') }}">
+              <i class="fas fa-code animate-element"></i> PopGital
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-element" href="{{ url_for('info') }}">
+              <i class="fas fa-envelope animate-element"></i> Profile
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="content-container">
+        <div class="content">
+            <span class="About-me-text">About me:</span> <br>
+            <span class="subject animate-element">Name: </span>Phattaratorn Mahatkeerati <br>
+            <span class="subject animate-element">Nickname: </span>Gital <br>
+            <span class="subject animate-element">Date of Birth: </span>30/01/2006 <br>
+            <span class="subject animate-element">Age: </span>17 <br>
+            <span class="subject animate-element">Phone: </span>095-553-1132 <br>
+            <span class="subject animate-element">Email: </span>sakukiheng@gmail.com <br>
+            <span class="subject animate-element">Favorite subjects: </span>Mathematics, Computer, Physics <br>
+            <span class="subject animate-element">School: </span>Saint's Gabriel College <br>
+            <span class="subject animate-element">Address: </span><br>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3878.179496718135!2d100.35596561030353!3d13.585843101059805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2bbe6595789cd%3A0xc867d30205534b43!2z4LiL4Lit4LiiIOC4q-C4oeC4ueC5iOC4muC5ieC4suC4meC4quC4ouC4suC4oeC5gOC4meC5gOC4iuC4reC4o-C4seC4peC5guC4ruC4oSA5IOC4nuC4seC4meC4l-C5ieC4suC4ouC4meC4o-C4quC4tOC4h-C4q-C5jCDguK3guLPguYDguKDguK3guYDguKHguLfguK3guIfguKrguKHguLjguJfguKPguKrguLLguITguKMg4Liq4Lih4Li44LiX4Lij4Liq4Liy4LiE4LijIDc0MDAw!5e0!3m2!1sth!2sth!4v1697376699256!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            <!-- Skills Section within the content -->
+            <h2 class="Skills-text">My Skills</h2>
+            <div class="skills-grid">
+                <div class="grid-item skill-grid-1 animate-element">
+                    <img class="skill-image" src="./images/about_me/C.png" alt="C"><br>C
+                </div>
+                <div class="grid-item skill-grid-2 animate-element">
+                    <img class="skill-image" src="./images/about_me/cpp.png" alt="C++"><br>C++
+                </div>
+                <div class="grid-item skill-grid-3 animate-element">
+                    <img class="skill-image" src="./images/about_me/c-sharp.png" alt="C#"><br>C#
+                </div>
+                <div class="grid-item skill-grid-4 animate-element">
+                    <img class="skill-image" src="./images/about_me/HTML5.png" alt="HTML"><br>HTML
+                </div>
+                <div class="grid-item skill-grid-5 animate-element">
+                    <img class="skill-image" src="./images/about_me/CSS-Logo.png" alt="CSS"><br>CSS
+                </div>
+                <div class="grid-item skill-grid-6 animate-element">
+                    <img class="skill-image" src="./images/about_me/javascript.png" alt="JavaScript"><br>JavaScript
+                </div>
+                <div class="grid-item skill-grid-7 animate-element">
+                    <img class="skill-image" src="./images/about_me/Python.png" alt="Python"><br>Python
+                </div>
+                <div class="grid-item skill-grid-8 animate-element">
+                    <img class="skill-image" src="./images/about_me/Pandas.png" alt="Pandas"><br>Data Science
+                </div>
+                <div class="grid-item skill-grid-9 animate-element">
+                    <img class="skill-image" src="./images/about_me/ChatGPT-Emblem.png" alt="AI"><br>AI (regression, image, GPT, RVC)
+                </div>
+            </div>
+        </div>
+    
+        <!-- Placeholder for image on the right side -->
+        <div class="image-placeholder">
+            Image Placeholder
+        </div>
+    </div>
+    
+    </div>
+      <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="social-icons">
+      <a href="https://twitter.com" target="_blank" class="icon twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com" target="_blank" class="icon github">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <a class="email-link" href="mailto:youremail@example.com">Send me an email</a>
+  </section>
+    <script src="static/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
